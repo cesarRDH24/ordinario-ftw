@@ -8,30 +8,40 @@
         <nombre>Radiohead</nombre>
         <pais>Reino Unido</pais>
         <genero>Alternative Rock</genero>
+        <album>OK Computer</album>
+        <cancion>Paranoid Android</cancion>
     </artista>
 
     <artista>
         <nombre>The Strokes</nombre>
         <pais>Estados Unidos</pais>
         <genero>Indie Rock</genero>
+        <album>Is This It</album>
+        <cancion>Someday</cancion>
     </artista>
 
     <artista>
         <nombre>Arctic Monkeys</nombre>
         <pais>Reino Unido</pais>
         <genero>Indie Rock</genero>
+        <album>AM</album>
+        <cancion>Do I Wanna Know?</cancion>
     </artista>
 
     <artista>
         <nombre>Tame Impala</nombre>
         <pais>Australia</pais>
         <genero>Psychedelic Rock</genero>
+        <album>Currents</album>
+        <cancion>The Less I Know The Better</cancion>
     </artista>
 
     <artista>
-        <nombre>Daft Punk</nombre>
-        <pais>Francia</pais>
-        <genero>Electronic</genero>
+        <nombre>Deftones</nombre>
+        <pais>Estados Unios</pais>
+        <genero>Alternative Metal</genero>
+        <album>Around the fur</album>
+        <cancion>My Own Summer</cancion>
     </artista>
 
 </musicahub>
