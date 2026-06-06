@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE musicahub SYSTEM "musica.dtd">
+
+<musicahub>
+
+    <artista>
+        <nombre>Radiohead</nombre>
+        <pais>Reino Unido</pais>
+        <genero>Alternative Rock</genero>
+    </artista>
+
+    <artista>
+        <nombre>The Strokes</nombre>
+        <pais>Estados Unidos</pais>
+        <genero>Indie Rock</genero>
+    </artista>
+
+    <artista>
+        <nombre>Arctic Monkeys</nombre>
+        <pais>Reino Unido</pais>
+        <genero>Indie Rock</genero>
+    </artista>
+
+    <artista>
+        <nombre>Tame Impala</nombre>
+        <pais>Australia</pais>
+        <genero>Psychedelic Rock</genero>
+    </artista>
+
+    <artista>
+        <nombre>Daft Punk</nombre>
+        <pais>Francia</pais>
+        <genero>Electronic</genero>
+    </artista>
+
+</musicahub>

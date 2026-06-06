@@ -1,0 +1,7 @@
+<!ELEMENT musicahub (artista+)>
+
+<!ELEMENT artista (nombre,pais,genero)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
