@@ -26,14 +26,40 @@
 
 <main>
 
-    <h2>Géneros</h2>
+    <h2>Géneros Musicales</h2>
 
     <p>
-        En esta sección se mostrarán los Géneros musicales disponibles
-        en MusicHub.
+        Explora los géneros musicales presentes en MusicHub.
     </p>
 
+    <label for="busquedaGenero">
+        Buscar género:
+    </label>
+
+    <input
+        type="text"
+        id="busquedaGenero"
+        placeholder="Escribe un género">
+
+    <br><br>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Género</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaGeneros">
+
+        </tbody>
+
+    </table>
+
 </main>
+
+<script src="../js/generos.js"></script>
 
 <footer>
     <p>© 2026 MusicHub</p>

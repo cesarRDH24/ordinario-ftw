@@ -29,11 +29,38 @@
     <h2>Canciones</h2>
 
     <p>
-        En esta sección se mostrarán las canciones disponibles
-        en MusicHub.
+        Lista de canciones disponibles en MusicHub.
     </p>
 
+    <label for="busquedaCancion">
+        Buscar canción:
+    </label>
+
+    <input
+        type="text"
+        id="busquedaCancion"
+        placeholder="Escribe una canción">
+
+    <br><br>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Canción</th>
+                <th>Artista</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaCanciones">
+
+        </tbody>
+
+    </table>
+
 </main>
+
+<script src="../js/canciones.js"></script>
 
 <footer>
     <p>© 2026 MusicHub</p>
