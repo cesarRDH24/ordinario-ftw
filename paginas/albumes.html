@@ -8,7 +8,7 @@
 <body>
 
 <header>
-    <h1>MusicHub</h1>
+    <h1>🎵 MusicHub 🎵</h1>
 </header>
 
 <nav>
@@ -26,17 +26,44 @@
 
 <main>
 
-    <h2>Albumes</h2>
+    <h2>Álbumes</h2>
 
     <p>
-        En esta sección se mostrarán los albumes disponibles
-        en MusicHub.
+        Lista de álbumes disponibles en MusicHub.
     </p>
+
+    <label for="busquedaAlbum">
+        Buscar álbum:
+    </label>
+
+    <input
+        type="text"
+        id="busquedaAlbum"
+        placeholder="Escribe un álbum">
+
+    <br><br>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Álbum</th>
+                <th>Artista</th>
+            </tr>
+        </thead>
+
+        <tbody id="tablaAlbumes">
+
+        </tbody>
+
+    </table>
 
 </main>
 
+<script src="../js/albumes.js"></script>
+
 <footer>
-    <p>© 2026 MusicHub</p>
+    <p> 2026 MusicHub</p>
 </footer>
 
 </body>

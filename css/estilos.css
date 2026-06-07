@@ -1,82 +1,162 @@
 body{
     font-family: Arial, sans-serif;
+    background-color: #F7F5FF;
+    color: #2D2D2D;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
 }
+
+/* HEADER */
 
 header{
-    background-color: #222;
+    background-color: #7B61FF;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 
+/* MENU */
+
 nav{
-    background-color: #444;
-    padding: 10px;
+    background-color: #B799FF;
 }
 
 nav ul{
-    list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav li{
-    display: inline;
-    margin: 0 10px;
+    margin: 10px;
 }
 
 nav a{
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
 }
 
+nav a:hover{
+    color: #2D2D2D;
+}
+
+/* CONTENIDO */
+
 main{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
     padding: 20px;
 }
 
-section{
+/* SECCIONES */
+
+section,
+article,
+aside{
     background-color: white;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 12px;
+
+    box-shadow:
+    0px 2px 8px rgba(0,0,0,0.1);
 }
+
+/* TITULOS */
+
+h1,h2,h3{
+    color: #7B61FF;
+}
+
+/* TABLAS */
 
 table{
     width: 100%;
     border-collapse: collapse;
+    background-color: white;
 }
 
-th, td{
-    border: 1px solid black;
-    padding: 8px;
-    text-align: center;
-}
-
-img{
-    max-width: 100%;
-}
-
-footer{
-    background-color: #222;
+th{
+    background-color: #B799FF;
     color: white;
-    text-align: center;
-    padding: 10px;
 }
+
+th,
+td{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:hover{
+    background-color: #F0EBFF;
+}
+
+/* INPUTS */
+
+input{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* BOTONES */
 
 button{
-    background-color: #444;
+    background-color: #7B61FF;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 button:hover{
-    background-color: #222;
+    background-color: #6248e8;
+}
+
+/* IMAGENES */
+
+img{
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #7B61FF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table{
+        font-size: 14px;
+    }
+
+    main{
+        width: 95%;
+    }
+
+}
+
+blockquote{
+    background-color: white;
+    padding: 15px;
+    border-left: 5px solid #7B61FF;
+    font-style: italic;
 }
