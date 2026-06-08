@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE albumes SYSTEM "albumes.dtd">
+
+<albumes>
+
+    <album>
+        <titulo>OK Computer</titulo>
+        <artista>Radiohead</artista>
+        <anio>1997</anio>
+        <imagen>computer.jpg</imagen>
+        <calificacion>9.9</calificacion>
+        <descripcion>
+        OK Computer es el tercer álbum de estudio de la banda británica de rock alternativo Radiohead, 
+        lanzado el 21 de mayo de 1997 a través de las subsidiarias de EMI Parlophone y Capitol Records.
+        </descripcion>
+    </album>
+
+    <album>
+        <titulo>In Rainbows</titulo>
+        <artista>Radiohead</artista>
+        <anio>2007</anio>
+        <imagen>inrainbows.jpg</imagen>
+        <calificacion>9.8</calificacion>
+        <descripcion>
+        In Rainbows es el séptimo álbum de estudio de la banda británica de rock alternativo Radiohead. 
+        Originalmente se lanzó el 10 de octubre de 2007 en formato digital y se convino que los interesados en descargarlo pagaran lo que creyeran conveniente.
+        </descripcion>
+    </album>
+
+    <album>
+        <titulo>White Pony</titulo>
+        <artista>Deftones</artista>
+        <anio>2000</anio>
+        <imagen>whitepony.jpg</imagen>
+        <calificacion>9.7</calificacion>
+        <descripcion>
+        White Pony es el tercer álbum de estudio de la banda de metal alternativo estadounidense Deftones. 
+        Fue publicado el 20 de junio de 2000 a través del sello discográfico Maverick, 
+        coincidiendo con el vigesimoséptimo cumpleaños de Chino Moreno.
+        </descripcion>
+    </album>
+
+    <album>
+        <titulo>El silencio</titulo>
+        <artista>Caifanes</artista>
+        <anio>1992</anio>
+        <imagen>elsilencio.jpg</imagen>
+        <calificacion>9.6</calificacion>
+        <descripcion>
+        El Silencio es el tercer álbum de estudio de la banda de rock alternativo mexicano Caifanes, 
+        lanzada el 29 de mayo de 1992. 
+        En ocasiones es juzgado como la obra cumbre de la agrupación.
+        </descripcion>
+    </album>
+
+    <album>
+        <titulo>A mis 20</titulo>
+        <artista>Natanael Cano</artista>
+        <anio>2021</anio>
+        <imagen>amis20.jpg</imagen>
+        <calificacion>9.1</calificacion>
+        <descripcion>
+        "A mis 20" es un exitoso álbum de estudio del cantante y compositor mexicano Natanael Cano, 
+        lanzado en mayo de 2021. El disco marcó un punto de inflexión en su carrera al celebrar su juventud, 
+        consolidarlo como el pionero de los corridos tumbados y mostrar una notable evolución instrumental.
+        </descripcion>
+    </album>
+
+</albumes>

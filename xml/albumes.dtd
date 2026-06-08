@@ -1,0 +1,11 @@
+<!ELEMENT albumes (album+)>
+
+<!ELEMENT album
+(titulo,artista,anio, imagen, calificacion, descripcion)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT anio (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT calificacion (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

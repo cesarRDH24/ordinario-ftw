@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE generos SYSTEM "generos.dtd">
+
+<generos>
+
+    <genero>
+
+        <nombre>Alternative Rock</nombre>
+
+        <origen>Reino Unido y Estados Unidos</origen>
+
+        <anio_aprox>1980</anio_aprox>
+
+        <representantes>
+            Radiohead, R.E.M., The Smashing Pumpkins
+        </representantes>
+
+        <instrumento_principal>
+            Guitarra eléctrica
+        </instrumento_principal>
+
+        <descripcion>
+            Género derivado del rock que se caracteriza
+            por sonidos experimentales y estilos diversos.
+        </descripcion>
+
+        <imagen>ar.jpg</imagen>
+
+    </genero>
+
+    <genero>
+
+        <nombre>Corridos Tumbados</nombre>
+
+        <origen>México</origen>
+
+        <anio_aprox>2019</anio_aprox>
+
+        <representantes>
+            Natanael Cano, Junior H
+        </representantes>
+
+        <instrumento_principal>
+            Guitarra Docerola
+        </instrumento_principal>
+
+        <descripcion>
+            Subgénero musical que fusiona la música
+            regional mexicana con elementos urbanos.
+        </descripcion>
+
+        <imagen>ct.jpg</imagen>
+
+    </genero>
+
+    <genero>
+
+        <nombre>Alternative Metal</nombre>
+
+        <origen>Estados Unidos</origen>
+
+        <anio_aprox>1990</anio_aprox>
+
+        <representantes>
+            Deftones, Tool, System Of A Down
+        </representantes>
+
+        <instrumento_principal>
+            Guitarra distorsionada
+        </instrumento_principal>
+
+        <descripcion>
+            Combina elementos del metal con sonidos
+            alternativos y experimentales.
+        </descripcion>
+
+        <imagen>am.jpg</imagen>
+
+    </genero>
+
+    <genero>
+
+    <nombre>Rock en Español</nombre>
+
+    <origen>Latinoamérica y España</origen>
+
+    <anio_aprox>1980</anio_aprox>
+
+    <representantes>
+        Caifanes, Soda Stereo, Héroes del Silencio
+    </representantes>
+
+    <instrumento_principal>
+        Guitarra eléctrica
+    </instrumento_principal>
+
+    <descripcion>
+        Género musical que adapta las bases del rock
+        tradicional al idioma español, incorporando
+        influencias culturales latinoamericanas y
+        sonidos propios de cada región.
+    </descripcion>
+
+    <imagen>re.jpg</imagen>
+
+    </genero>
+
+</generos>

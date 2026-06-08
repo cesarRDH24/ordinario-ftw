@@ -1,0 +1,25 @@
+<!ELEMENT generos (genero+)>
+
+<!ELEMENT genero (
+    nombre,
+    origen,
+    anio_aprox,
+    representantes,
+    instrumento_principal,
+    descripcion,
+    imagen
+)>
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT origen (#PCDATA)>
+
+<!ELEMENT anio_aprox (#PCDATA)>
+
+<!ELEMENT representantes (#PCDATA)>
+
+<!ELEMENT instrumento_principal (#PCDATA)>
+
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT imagen (#PCDATA)>

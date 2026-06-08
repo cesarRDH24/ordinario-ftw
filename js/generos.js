@@ -1,6 +1,6 @@
 let todosLosGeneros = [];
 
-fetch("../xml/musica.xml")
+fetch("../xml/generos.xml")
 .then(response => response.text())
 .then(data => {
 
@@ -11,26 +11,51 @@ fetch("../xml/musica.xml")
         "text/xml"
     );
 
-    let artistas =
-        xml.getElementsByTagName("artista");
+    let generos =
+        xml.getElementsByTagName(
+            "genero"
+        );
 
-    let generosUnicos = [];
-
-    for(let artista of artistas)
+    for(let genero of generos)
     {
-        let genero =
-            artista
-            .getElementsByTagName("genero")[0]
-            .textContent;
+        todosLosGeneros.push({
 
-        if(!generosUnicos.includes(genero))
-        {
-            generosUnicos.push(genero);
+            nombre:
+                genero
+                .getElementsByTagName("nombre")[0]
+                .textContent,
 
-            todosLosGeneros.push({
-                genero: genero
-            });
-        }
+            origen:
+                genero
+                .getElementsByTagName("origen")[0]
+                .textContent,
+
+            anio:
+                genero
+                .getElementsByTagName("anio_aprox")[0]
+                .textContent,
+
+            representantes:
+                genero
+                .getElementsByTagName("representantes")[0]
+                .textContent,
+
+            instrumento:
+                genero
+                .getElementsByTagName("instrumento_principal")[0]
+                .textContent,
+
+            descripcion:
+                genero
+                .getElementsByTagName("descripcion")[0]
+                .textContent,
+
+            imagen:
+                genero
+                .getElementsByTagName("imagen")[0]
+                .textContent
+
+        });
     }
 
     mostrarGeneros(
@@ -48,32 +73,96 @@ function mostrarGeneros(lista)
 
     tabla.innerHTML = "";
 
-    for(let genero of lista)
-    {
-        tabla.innerHTML += `
-            <tr>
-                <td>${genero.genero}</td>
-            </tr>
+    lista.forEach(genero => {
+
+        let fila =
+            document.createElement("tr");
+
+        fila.innerHTML = `
+            <td>${genero.nombre}</td>
         `;
-    }
+
+        fila.addEventListener(
+            "click",
+            function()
+            {
+                mostrarInfoGenero(
+                    genero
+                );
+            }
+        );
+
+        tabla.appendChild(
+            fila
+        );
+
+    });
+}
+
+function mostrarInfoGenero(genero)
+{
+    let info =
+        document.getElementById(
+            "infoGenero"
+        );
+
+    info.innerHTML = `
+
+        <img
+            src="../img/${genero.imagen}"
+            alt="${genero.nombre}"
+            class="foto-artista">
+
+        <h3>
+            🎵 ${genero.nombre}
+        </h3>
+
+        <p>
+            <strong>Origen:</strong>
+            ${genero.origen}
+        </p>
+
+        <p>
+            <strong>Año aproximado:</strong>
+            ${genero.anio}
+        </p>
+
+        <p>
+            <strong>Representantes:</strong>
+            ${genero.representantes}
+        </p>
+
+        <p>
+            <strong>Instrumento principal:</strong>
+            ${genero.instrumento}
+        </p>
+
+        <p>
+            ${genero.descripcion}
+        </p>
+
+    `;
 }
 
 document
 .getElementById("busquedaGenero")
-.addEventListener("keyup", function()
-{
-    let texto =
-        this.value.toLowerCase();
+.addEventListener(
+    "keyup",
+    function()
+    {
+        let texto =
+            this.value.toLowerCase();
 
-    let filtrados =
-        todosLosGeneros.filter(
-            genero =>
-                genero.genero
-                .toLowerCase()
-                .includes(texto)
+        let filtrados =
+            todosLosGeneros.filter(
+                genero =>
+                    genero.nombre
+                    .toLowerCase()
+                    .includes(texto)
+            );
+
+        mostrarGeneros(
+            filtrados
         );
-
-    mostrarGeneros(
-        filtrados
-    );
-});
+    }
+);

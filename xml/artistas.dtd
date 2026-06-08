@@ -1,0 +1,10 @@
+<!ELEMENT artistas (artista+)>
+
+<!ELEMENT artista (nombre,pais,genero,calificacion, imagen, descripcion)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT genero (#PCDATA)>
+<!ELEMENT calificacion (#PCDATA)>
+<!ELEMENT imagen (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE canciones SYSTEM "canciones.dtd">
+
+<canciones>
+
+    <cancion>
+        <titulo>Karma Police</titulo>
+        <artista>Radiohead</artista>
+        <duracion>4:24</duracion>
+    </cancion>
+
+    <cancion>
+        <titulo>No Surprises</titulo>
+        <artista>Radiohead</artista>
+        <duracion>3:49</duracion>
+    </cancion>
+
+    <cancion>
+        <titulo>Change</titulo>
+        <artista>Deftones</artista>
+        <duracion>4:43</duracion>
+    </cancion>
+
+    <cancion>
+        <titulo>Last Nite</titulo>
+        <artista>The Strokes</artista>
+        <duracion>3:17</duracion>
+    </cancion>
+
+
+    <cancion>
+        <titulo>Diamantes</titulo>
+        <artista>Natanael Cano</artista>
+        <duracion>3:31</duracion>
+    </cancion>
+
+</canciones>

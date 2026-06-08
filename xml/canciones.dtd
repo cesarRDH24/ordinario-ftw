@@ -1,0 +1,8 @@
+<!ELEMENT canciones (cancion+)>
+
+<!ELEMENT cancion
+(titulo,artista,duracion)>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT duracion (#PCDATA)>

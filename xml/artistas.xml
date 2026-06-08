@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE artistas SYSTEM "artistas.dtd">
+
+<artistas>
+
+    <artista>
+
+    <nombre>Radiohead</nombre>
+
+    <pais>Reino Unido</pais>
+
+    <genero>Alternative Rock</genero>
+
+    <calificacion>⭐⭐⭐⭐⭐</calificacion>
+    <imagen>rh.jpg</imagen>
+     <descripcion>
+        Radiohead es una banda británica de rock alternativo originaria de Abingdon-on-Thames, Inglaterra, formada en 1985 inicialmente como una banda de versiones. 
+        Está integrada por Thom Yorke, Jonny Greenwood, Ed O'Brien, Colin Greenwood y Phil Selway. 
+        Radiohead lanzó su primer sencillo, «Creep», en 1992.
+    </descripcion>
+
+    </artista>
+
+    <artista>
+        <nombre>Caifanes</nombre>
+        <pais>México</pais>
+        <genero>Rock En Español</genero>
+        <calificacion>⭐⭐⭐⭐⭐</calificacion>
+        <imagen>caifanes.jpg</imagen>
+         <descripcion>
+        Caifanes es una banda mexicana de rock alternativo. 
+        Su música ha sido considerada por la crítica como uno de los actos más innovadores e influyentes en el rock latinoamericano durante el siglo XX. 
+        Estuvo activa de 1987 a 1995, ​ y de 2011 hasta la actualidad
+||      </descripcion>
+    </artista>
+
+    <artista>
+        <nombre>Arctic Monkeys</nombre>
+        <pais>Reino Unido</pais>
+        <genero>Indie Rock</genero>
+        <calificacion>⭐⭐⭐⭐</calificacion>
+        <imagen>monosArticos.jpg</imagen>
+        <descripcion>
+        Arctic Monkeys es una banda británica de indie rock, formada en Sheffield, Reino Unido, en 2002.​ 
+        Está integrada por el guitarrista principal y vocalista Alex Turner, el guitarrista Jamie Cook, el baterista Matt Helders y el bajista Nick O'Malley.
+        </descripcion>
+    </artista>
+
+    <artista>
+        <nombre>Guns N Roses</nombre>
+        <pais>Estados Unidos</pais>
+        <genero>Rock clásico</genero>
+        <calificacion>⭐⭐⭐⭐⭐</calificacion>
+        <imagen>gunsandroses.jpg</imagen>
+        <descripcion>
+        Guns N' Roses es una banda estadounidense de hard rock formada en Hollywood, Los Ángeles, en la zona de Sunset Strip, en 1985. 
+        Fue fundada por el vocalista y pianista Axl Rose, y el guitarrista Izzy Stradlin.​​ 
+        </descripcion>
+    </artista>
+
+    <artista>
+        <nombre>Deftones</nombre>
+        <pais>Estados Unidos</pais>
+        <genero>Alternative Metal</genero>
+        <calificacion>⭐⭐⭐⭐</calificacion>
+        <imagen>deftoness.jpg</imagen>
+        <descripcion>
+        Deftones es una banda estadounidense de metal alternativo formada en Sacramento, California, en el año 1988. 
+        Son considerados los pioneros del género nu metal junto con Korn. 
+        Sus integrantes son Chino Moreno, Stephen Carpenter, Abe Cunningham, y Frank Delgado.
+        </descripcion>
+    </artista>
+
+    <artista>
+        <nombre>Natanael Cano</nombre>
+        <pais>México</pais>
+        <genero>Corridos Tumbados</genero>
+        <calificacion>⭐⭐⭐⭐⭐</calificacion>
+        <imagen>NatanaelCano.jpg</imagen>
+         <descripcion>
+        Natanahel Rubén Cano Monge es un cantante mexicano dedicado principalmente al género musical corridos tumbados, 
+        además de ser acreditado como precursor del mismo.
+        ​Publicó su primer álbum de estudio Todo es diferente en 2019 a través de la compañía discográfica independiente La R Records.​
+        </descripcion>
+    </artista>
+
+</artistas>

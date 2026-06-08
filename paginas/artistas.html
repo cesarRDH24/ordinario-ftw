@@ -28,24 +28,12 @@
 
 <main>
 
-    <main>
 
     <h2>Artistas</h2>
 
     <p>
         Lista de artistas disponibles en MusicHub.
     </p>
-
-    <label for="busqueda">
-        Buscar artista:
-    </label>
-
-    <input
-        type="text"
-        id="busqueda"
-        placeholder="Escribe un nombre">
-
-    <br><br>
 
         <section>
 
@@ -68,28 +56,51 @@
 
         <article class="card">
 
-            <img src="../img/thestrokes.png"
+            <img src="../img/deftones.jpg"
                 alt="The Strokes">
 
-            <h3>The Strokes</h3>
+            <h3>Deftones</h3>
 
             <p>
-                Referentes del indie rock.
+                Alternative Metal
             </p>
 
         </article>
 
         </section>
-        </section>
 
 
+        <section class="buscador">
+
+    <h3>Buscar Artistas</h3>
+
+    <input
+        type="text"
+        id="busqueda"
+        placeholder="Nombre">
+
+    <input
+        type="text"
+        id="filtroGenero"
+        placeholder="Género">
+
+    <input
+        type="text"
+        id="filtroPais"
+        placeholder="País">
+
+</section>
+
+        
     <table>
 
         <thead>
+            
             <tr>
                 <th>Nombre</th>
                 <th>País</th>
                 <th>Género</th>
+                <th>Calificación</th>
             </tr>
         </thead>
 
@@ -99,13 +110,23 @@
 
     </table>
 
+    <section id="infoArtista" class="detalle-artista">
+
+    <h3>
+        Selecciona un artista
+    </h3>
+
+    <p>
+        Haz clic en una fila de la tabla para ver más información.
+    </p>
+
+</section>
+
+<script src="../js/artistas.js"></script>
+
 </main>
 
-<script src="../js/script.js"></script>
-
-</main>
-
-<script src="../js/script.js"></script>
+<script src="../js/artistas.js"></script>
 
 <footer>
     <p> 2026 MusicHub</p>

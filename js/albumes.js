@@ -1,31 +1,54 @@
 let todosLosAlbumes = [];
 
-fetch("../xml/musica.xml")
+fetch("../xml/albumes.xml")
 .then(response => response.text())
 .then(data => {
 
     let parser = new DOMParser();
 
-    let xml = parser.parseFromString(
-        data,
-        "text/xml"
-    );
+    let xml =
+        parser.parseFromString(
+            data,
+            "text/xml"
+        );
 
-    let artistas =
-        xml.getElementsByTagName("artista");
+    let albumes =
+        xml.getElementsByTagName(
+            "album"
+        );
 
-    for(let artista of artistas)
+    for(let album of albumes)
     {
         todosLosAlbumes.push({
 
-            album:
-                artista
-                .getElementsByTagName("album")[0]
+            titulo:
+                album
+                .getElementsByTagName("titulo")[0]
                 .textContent,
 
-            nombre:
-                artista
-                .getElementsByTagName("nombre")[0]
+            artista:
+                album
+                .getElementsByTagName("artista")[0]
+                .textContent,
+
+            anio:
+                album
+                .getElementsByTagName("anio")[0]
+                .textContent,
+
+            calificacion:
+                album
+                .getElementsByTagName("calificacion")[0]
+                .textContent,
+
+            imagen:
+                album
+                .getElementsByTagName("imagen")[0]
+                .textContent,
+
+            descripcion:
+                album
+                .getElementsByTagName("descripcion")[0]
                 .textContent
 
         });
@@ -46,33 +69,73 @@ function mostrarAlbumes(lista)
 
     tabla.innerHTML = "";
 
-    for(let album of lista)
-    {
-        tabla.innerHTML += `
-            <tr>
-                <td>${album.album}</td>
-                <td>${album.nombre}</td>
-            </tr>
+    lista.forEach(album => {
+
+        let fila =
+            document.createElement(
+                "tr"
+            );
+
+        fila.innerHTML = `
+            <td>${album.titulo}</td>
+            <td>${album.artista}</td>
+            <td>${album.anio}</td>
+            <td>⭐ ${album.calificacion}</td>
         `;
-    }
-}
 
-document
-.getElementById("busquedaAlbum")
-.addEventListener("keyup", function()
-{
-    let texto =
-        this.value.toLowerCase();
-
-    let filtrados =
-        todosLosAlbumes.filter(
-            album =>
-                album.album
-                .toLowerCase()
-                .includes(texto)
+        fila.addEventListener(
+            "click",
+            function()
+            {
+                mostrarInfoAlbum(
+                    album
+                );
+            }
         );
 
-    mostrarAlbumes(
-        filtrados
-    );
-});
+        tabla.appendChild(
+            fila
+        );
+
+    });
+}
+
+function mostrarInfoAlbum(album)
+{
+    let info =
+        document.getElementById(
+            "infoAlbum"
+        );
+
+    info.innerHTML = `
+
+        <img
+            src="../img/${album.imagen}"
+            alt="${album.titulo}"
+            class="foto-artista">
+
+        <h3>
+            💿 ${album.titulo}
+        </h3>
+
+        <p>
+            <strong>Artista:</strong>
+            ${album.artista}
+        </p>
+
+        <p>
+            <strong>Año:</strong>
+            ${album.anio}
+        </p>
+
+        <p>
+            <strong>Calificación:</strong>
+            ⭐ ${album.calificacion}
+        </p>
+
+        <p>
+            ${album.descripcion}
+        </p>
+
+    `;
+}
