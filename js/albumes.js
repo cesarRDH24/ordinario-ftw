@@ -139,3 +139,37 @@ function mostrarInfoAlbum(album)
 
     `;
 }
+
+function filtrarAlbumes()
+{
+    let texto =
+        document
+        .getElementById("busquedaAlbum")
+        .value
+        .toLowerCase();
+
+    let filtrados =
+    todosLosAlbumes.filter(
+        album =>
+
+        album.titulo
+        .toLowerCase()
+        .includes(texto)
+
+        ||
+
+        album.artista
+        .toLowerCase()
+        .includes(texto)
+
+        ||
+
+        album.anio
+        .toLowerCase()
+        .includes(texto)
+    );
+
+    mostrarAlbumes(
+        filtrados
+    );
+}
