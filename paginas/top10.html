@@ -2,117 +2,103 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Artistas - MusicHub</title>
+    <title>Top 10 - MusicHub</title>
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
 
 <header>
+
     <h1>MusicHub</h1>
 
-    <p>🎵 Tu espacio para descubrir música, artistas y álbumes 🎵</p>
+    <p>
+        🎵 Tu espacio para descubrir música, artistas y álbumes 🎵
+    </p>
+
 </header>
 
 <nav>
+
     <ul>
+
         <li><a href="../index.html">Inicio</a></li>
+
         <li><a href="artistas.html">Artistas</a></li>
+
         <li><a href="albumes.html">Álbumes</a></li>
+
         <li><a href="canciones.html">Canciones</a></li>
+
         <li><a href="generos.html">Géneros</a></li>
+
         <li><a href="top10.html">Top 10</a></li>
+
         <li><a href="micuenta.html">Mi cuenta</a></li>
+
         <li><a href="acerca.html">Acerca de</a></li>
+
     </ul>
+
 </nav>
 
 <main>
 
-    <h2>Top 10 Canciones</h2>
+    <h2>
+        🏆 Top Álbumes de MusicHub
+    </h2>
 
     <p>
-        Ranking de canciones populares dentro de MusicHub.
+        Ranking generado automáticamente a partir de las
+        calificaciones almacenadas en el archivo XML.
     </p>
 
-    <table border="1">
+    <table>
 
         <thead>
+
             <tr>
+
                 <th>Posición</th>
+
                 <th>Álbum</th>
+
                 <th>Calificación</th>
+
             </tr>
+
         </thead>
 
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Paranoid Android</td>
-                <td>Radiohead</td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td>Someday</td>
-                <td>The Strokes</td>
-            </tr>
-
-            <tr>
-                <td>3</td>
-                <td>Do I Wanna Know?</td>
-                <td>Arctic Monkeys</td>
-            </tr>
-
-            <tr>
-                <td>4</td>
-                <td>The Less I Know The Better</td>
-                <td>Tame Impala</td>
-            </tr>
-
-            <tr>
-                <td>5</td>
-                <td>Instant Crush</td>
-                <td>Daft Punk</td>
-            </tr>
-
-            <tr>
-                <td>6</td>
-                <td>Reckoner</td>
-                <td>Radiohead</td>
-            </tr>
-
-            <tr>
-                <td>7</td>
-                <td>Why Are Sundays So Depressing</td>
-                <td>The Strokes</td>
-            </tr>
-
-            <tr>
-                <td>8</td>
-                <td>Fluorescent Adolescent</td>
-                <td>Arctic Monkeys</td>
-            </tr>
-
-            <tr>
-                <td>9</td>
-                <td>Borderline</td>
-                <td>Tame Impala</td>
-            </tr>
-
-            <tr>
-                <td>10</td>
-                <td>Get Lucky</td>
-                <td>Daft Punk</td>
-            </tr>
+        <tbody id="tablaTop">
 
         </tbody>
 
     </table>
 
+    <section>
+
+        <h3>
+            ⭐ ¿Cómo se calcula el ranking?
+        </h3>
+
+        <p>
+            Los álbumes son ordenados automáticamente
+            según su calificación registrada en el sistema.
+            El ranking se actualiza de forma dinámica al
+            cargar los datos desde XML mediante JavaScript.
+        </p>
+
+    </section>
+
 </main>
 
+<script src="../js/top10.js"></script>
+
 <footer>
-    <p> 2026 MusicHub</p>
+
+    <p>
+        2026 MusicHub
+    </p>
+
 </footer>
 
 </body>
